@@ -2,7 +2,7 @@
 
 ## Solution Explanation
 
-This program reads team win-loss records from a JSON file and displays wins in a head-to-head table format.
+This program reads team head-to-head records from a JSON file and displays wins in a head-to-head table format.
 
 ### Approach
 1. Load the JSON data containing each team's records against opponents
@@ -16,10 +16,10 @@ This program reads team win-loss records from a JSON file and displays wins in a
 
 ### Data Structure
 The input JSON is structured as:
-```json
+```
 {
   "TEAM": {
-    "OPPONENT": { "W": wins, "L": losses }
+    "OPPONENT": { "W": <wins>, "L": <losses> }
   }
 }
 ```
